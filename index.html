@@ -2,25 +2,238 @@
 <html>
 <head>
     <title>Deeksha Prahlad</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+            color: #333;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            background: #f8f9fb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            padding: 15px 20px;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: #374151;
+            font-size: 15px;
+            font-weight: 500;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-container a:hover {
+            border-bottom: 2px solid #6366f1;
+            color: #111827;
+        }
+
+        /* HERO */
+        .hero {
+            height: 40vh;
+            background: url('assets/images/background.png') center/cover no-repeat;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
             text-align: center;
-            margin-top: 100px;
-            background-color: #f5f5f5;
         }
-        h1 {
-            color: #2c3e50;
+
+        .overlay h1 {
+            font-size: 42px;
+            margin: 0;
         }
-        p {
-            color: #555;
+
+        .overlay p {
             font-size: 18px;
+        }
+
+        /* CONTENT */
+        section {
+            max-width: 850px;
+            margin: 60px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ABOUT */
+        .about-container {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #e5e7eb;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        /* CONTACT */
+        .contact-row {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .contact-item i {
+            font-size: 18px;
+            color: #6366f1;
+            width: 25px;
+        }
+
+        .contact-text a {
+            display: inline-block;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
+
 <body>
-    <h1>Deeksha Prahlad</h1>
-    <p>PhD Student | Cyber-Physical Systems | Agentic AI</p>
-    <p>About me</p>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="assets/DPResume.pdf" target="_blank">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="awards.html">Awards</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay">
+        <h1>Deeksha Prahlad</h1>
+        <p>Cyber-Physical Systems | Embedded ML | LLM</p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about-container">
+
+        <img src="assets/images/Profile.jpeg" alt="Deeksha Prahlad" class="profile-img">
+
+        <div class="about-text">
+            <h2>About</h2>
+
+            <p>
+                I am a second-year Ph.D. student in Computer Science at 
+                <a href="https://www.asu.edu/" target="_blank">Arizona State University</a>, 
+                and a member of the 
+                <a href="https://labs.engineering.asu.edu/kim/" target="_blank">ASU KIM Lab</a>. 
+                My research focuses on agentic AI for human-in-the-loop cyber-physical systems, 
+                with an emphasis on deterministic AI, real-time systems, and the integration 
+                of large language models in safety-critical environments.
+            </p>
+
+            <p>
+                I hold a Master’s degree in Robotics and Autonomous Systems (Artificial Intelligence) 
+                from Arizona State University, and a Bachelor’s degree in Electrical and Electronics Engineering 
+                from BMS Institute of Technology and Management.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-row">
+
+        <!-- Email (both emails under one icon) -->
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div class="contact-text">
+                <a href="mailto:dprahlad@asu.edu">dprahlad@asu.edu</a><br>
+                <a href="mailto:deekshaprahlad@gmail.com">deekshaprahlad@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/deekshaprahlad" target="_blank">
+                linkedin.com/in/deekshaprahlad
+            </a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/Deeksha-20-99" target="_blank">
+                github.com/Deeksha-20-99
+            </a>
+        </div>
+
+    </div>
+</section>
+
 </body>
 </html>

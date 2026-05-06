@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Publications | Deeksha Prahlad</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+            background: #f9fafb;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            padding: 15px 20px;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: #374151;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .nav-container a:hover {
+            color: #6366f1;
+        }
+
+        /* PAGE */
+        .container {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        /* CARD */
+        .pub-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: 0.2s;
+        }
+
+        .pub-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+        }
+
+        .pub-left {
+            max-width: 80%;
+        }
+
+        .pub-citation {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .pub-year {
+            font-size: 20px;
+            color: #9ca3af;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* LINKS */
+        .pub-links a {
+            margin-right: 15px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Highlight your name */
+        .me {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="assets/DPResume.pdf" target="_blank">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="awards.html">Awards</a>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <h2>Publications</h2>
+
+    <!-- PAPER 1 -->
+    <div class="pub-card">
+        <div class="pub-left">
+            <div class="pub-citation">
+                <span class="me">D. Prahlad</span>, D. Fan, and H. Kim, 
+                “Agentic Driving Coach: Robustness and Determinism of Agentic AI-Powered Human-in-the-Loop Cyber-Physical Systems,” 
+                in <i>Proc. FMSys ’26</i>, ACM, 2026 (to appear).
+            </div>
+            <div class="pub-links">
+                <a href="https://arxiv.org/abs/2604.11705" target="_blank">Paper</a>
+            </div>
+        </div>
+        <div class="pub-year">2026</div>
+    </div>
+
+    <!-- PAPER 2 -->
+    <div class="pub-card">
+        <div class="pub-left">
+            <div class="pub-citation">
+                <span class="me">D. Prahlad</span>, C. Lee, D. Kim and H. Kim, 
+                “Personalizing Large Language Models using Retrieval Augmented Generation and Knowledge Graph,” 
+                in <i>Companion Proc. WWW</i>, 2025.
+            </div>
+            <div class="pub-links">
+                <a href="https://dl.acm.org/doi/abs/10.1145/3701716.3715473" target="_blank">Paper</a>
+            </div>
+        </div>
+        <div class="pub-year">2025</div>
+    </div>
+
+    <!-- PAPER 3 -->
+    <div class="pub-card">
+        <div class="pub-left">
+            <div class="pub-citation">
+                C. Lee, <span class="me">D. Prahlad</span>, D. Kim, and H. Kim, 
+                “Work-in-Progress: On-device Retrieval Augmented Generation with Knowledge Graphs for Personalized Large Language Models,” 
+                in <i>Proc. EMSOFT</i>, IEEE, 2024.
+            </div>
+            <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/abstract/document/10740767" target="_blank">Paper</a>
+            </div>
+        </div>
+        <div class="pub-year">2024</div>
+    </div>
+
+    <!-- PAPER 4 -->
+    <div class="pub-card">
+        <div class="pub-left">
+            <div class="pub-citation">
+                I. Ramarao and <span class="me">D. Prahlad</span>, 
+                “Applications of Artificial Intelligence with Reference to Hematology: A Review,” 
+                <i>IJAEM</i>, vol. 3, no. 10, pp. 824–826, 2021.
+            </div>
+            <div class="pub-links">
+                <a href="https://ijaem.net/issue_dcp/Applications%20of%20Artificial%20Intelligence%20With%20Reference%20To%20Hematology%20A%20Review.pdf" target="_blank">Paper</a>
+            </div>
+        </div>
+        <div class="pub-year">2021</div>
+    </div>
+
+</div>
+
+</body>
+</html>

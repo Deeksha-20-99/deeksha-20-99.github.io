@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects | Deeksha Prahlad</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+            background: #f9fafb;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            padding: 15px 20px;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: #374151;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .nav-container a:hover {
+            color: #6366f1;
+        }
+
+        /* PAGE */
+        .container {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        /* CARD */
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+        }
+
+        .project-left {
+            max-width: 80%;
+        }
+
+        .project-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .project-left ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .project-left li {
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .project-date {
+            font-size: 14px;
+            color: #9ca3af;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="assets/DPResume.pdf" target="_blank">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="awards.html">Awards</a>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <h2>Projects</h2>
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+        <div class="project-left">
+            <div class="project-title">Agentic Driving Coach</div>
+            <ul>
+                <li>Developed a reactor-MoC using Lingua Franca to enforce determinism in agentic AI-powered CPS.</li>
+                <li>Focused on determinism with human-in-the-loop, AI agents, and dynamic environments.</li>
+                <li>Designed a driving coach as a case study for safety-critical CPS.</li>
+            </ul>
+        </div>
+        <div class="project-date">11/2025 – Present</div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+        <div class="project-left">
+            <div class="project-title">Personalizing LLM using RAG and KG</div>
+            <ul>
+                <li>Developed a RAG framework using knowledge graphs to reduce hallucinations.</li>
+                <li>Integrated calendar, contacts, and location for personalization.</li>
+                <li>Improved response accuracy with minimal latency overhead.</li>
+            </ul>
+        </div>
+        <div class="project-date">07/2024 – 03/2025</div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+        <div class="project-left">
+            <div class="project-title">Key Point Detection</div>
+            <ul>
+                <li>Developed HRNet model using PyTorch with COCO dataset achieving ~99% accuracy.</li>
+                <li>Trained custom dataset achieving ~98% accuracy.</li>
+                <li>Converted model to TensorFlow Lite and deployed on Raspberry Pi.</li>
+                <li>Enabled real-time keypoint detection visualization.</li>
+            </ul>
+        </div>
+        <div class="project-date">10/2023 – 12/2023</div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card">
+        <div class="project-left">
+            <div class="project-title">Enhancing Large Language Models</div>
+            <ul>
+                <li>Improved QA performance using BERT with PyTorch.</li>
+                <li>Enhanced LLaMA and T5 using transfer learning.</li>
+                <li>Evaluated improvements using ROUGE metrics.</li>
+            </ul>
+        </div>
+        <div class="project-date">09/2023 – 12/2023</div>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="project-card">
+        <div class="project-left">
+            <div class="project-title">Learning Complex Dexterous Manipulation</div>
+            <ul>
+                <li>Applied DAPG and reinforcement learning for object relocation tasks.</li>
+                <li>Implemented behavioral cloning and natural gradient methods.</li>
+                <li>Improved success rate from 98% to 99% using PPO.</li>
+            </ul>
+        </div>
+        <div class="project-date">01/2023 – 05/2023</div>
+    </div>
+
+    <!-- PROJECT 6 -->
+    <div class="project-card">
+        <div class="project-left">
+            <div class="project-title">Style GANs Translation</div>
+            <ul>
+                <li>Generated images from sketches using GAN-based translation.</li>
+                <li>Addressed limited dataset issues with image-to-image techniques.</li>
+                <li>Reduced training time by 30% using Google Colab GPUs.</li>
+            </ul>
+        </div>
+        <div class="project-date">08/2022 – 12/2022</div>
+    </div>
+
+</div>
+
+</body>
+</html>
